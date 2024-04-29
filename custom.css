@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(207,213,237);
+background: linear-gradient(90deg, rgba(207,213,237,1) 9%, rgba(43,80,187,1) 93%);
+  }
+  
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #66ccff;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+  }
+  
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .jumbotron {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff; 
+    height: 500px;
+    display: flex;
+      justify-content: center;
+      align-items: center;/* Cambia il colore del testo se necessario */
+  }
+
+  /* Stile per il video */
+  .video-background {
+    position: absolute;
+    top: 90;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }  
+
+  .logo h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #66ccff;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    height: 100%
+    }
+
+    .card-title {
+      color: blue;
+      text-align: center;
+      text-decoration:underline;
+    }
+
+    .card-text {
+      text-align: center;
+      padding: 15px;
+      line-height: 1.8;
+    } 
+
+    .offerta-card {
+      margin-bottom: 20px;
+    }
+    .offerta-card img {
+      width: 100%;
+      height: auto;
+    }
+    .offerta-card .details {
+      padding: 10px;
+    }
+
+    footer {
+       color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      .footer-links {
+      margin-bottom: 10px;
+      }
+    }

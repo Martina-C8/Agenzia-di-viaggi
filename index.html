@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/custom.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="/airplane-12212_256.gif" alt="Airplane" style="height: 40px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Offerte">Offerte della settimana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Welcome">Welcome Summer</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Offerte
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#Offerta">Offerta del giorno</a></li>
+                <li><a class="dropdown-item" href="#LastMinute">Last minute</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#diNoi">Dicono di noi</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Jumbotron-->
+
+    <div class="jumbotron text-center">
+      <!-- Aggiungi il video come sfondo -->
+      <video autoplay muted loop class="video-background">
+        <source
+          src="/assets/3125396-uhd_3840_2160_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="container">
+        <h1 class="display-4">Con-tatto Viaggi</h1>
+        <br />
+        <p class="lead">Esplora l'universo, scopri te stesso!</p>
+        <br />
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+          >Scopri di più</a
+        >
+      </div>
+    </div>
+    <!--fine jumbotron-->
+
+    <!--Inizio offerte della settimana-->
+    <div class="container" id="Offerte">
+      <h2 class="text-center my-4">Offerte della Settimana</h2>
+      <h2 class="text-center my-4">In Italia...</h2>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/formia.jpg"
+              alt="Destinazione 1"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Formia</h5>
+              <p class="card-text">
+                Formia, città costiera nel Lazio, famosa per le sue spiagge, le rovine romane, come il teatro e la villa di Mamurra, e il clima mediterraneo.</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/sicilia.webp"
+              alt="Destinazione 2"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sicilia</h5>
+              <p class="card-text">La Sicilia, la più grande isola del Mediterraneo, incanta con le sue spiagge mozzafiato, la ricca storia archeologica, i vivaci mercati e la deliziosa cucina mediterranea.</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/sardegna.jpg"
+              alt="Destinazione 3"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sardegna</h5>
+              <p class="card-text">
+                La Sardegna, gioiello del Mediterraneo, affascina con le sue spiagge di sabbia bianca, le acque cristalline, i siti archeologici nuragici e la cultura enogastronomica unica..</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/puglia.jpg"
+              alt="Destinazione 4"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Puglia</h5>
+              <p class="card-text">
+                La Puglia, regione nel cuore del Mediterraneo, stupisce con le sue coste frastagliate, i caratteristici trulli, la ricca storia, l'arte barocca e la cucina tradizionale.</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="text-center my-4">... o all'estero?</h2>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/mauritius1.jpeg"
+              alt="Destinazione 1"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mauritius</h5>
+              <p class="card-text">Mauritius, isola paradisiaca nell'Oceano Indiano, incanta con le sue spiagge di sabbia bianca, le acque turchesi, i paesaggi tropicali, la cultura creola e l'ospitalità calorosa.</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/malaga.avif"
+              alt="Destinazione 2"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Malaga</h5>
+              <p class="card-text">Malaga, città spagnola sulla Costa del Sol, vanta un ricco patrimonio storico-culturale con musei, castelli e chiese, oltre a spiagge mozzafiato, vita notturna vivace e deliziosa gastronomia mediterranea.</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/spiaggia-capoverde.jpg"
+              alt="Destinazione 3"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Capo Verde</h5>
+              <p class="card-text">Capo Verde, arcipelago al largo delle coste africane, seduce con le sue spiagge di sabbia dorata, le acque cristalline, la musica vivace e l'atmosfera rilassata.</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card shadow">
+            <img
+              class="card-img-top"
+              src="/assets/brasile.jpg"
+              alt="Destinazione 4"
+              style="height: 200px"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Brasile</h5>
+              <p class="card-text">Il Brasile, gigante sudamericano, è celebre per le sue spiagge incantevoli, la foresta amazzonica, la cultura vibrante, la musica samba e il calcio appassionato.</p>
+              <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Welcome summer-->
+      <div class="container" id="Welcome">
+        <h2 class="text-center my-4">Welcome Summer</h2>
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="/assets/Marsa alam.jpg" alt="Destinazione 1" style= "height: 120px;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Marsa Alam</h5>
+                <p class="card-text">Marsa Alam, gioiello costiero dell'Egitto, vanta acque cristalline, coralli vibranti, spiagge dorate e un'atmosfera tranquilla, perfetta per il relax e l'immersione nella natura marina.</p>
+                <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+              </div>
+            </div>
+          </div>
+          <!-- Ripeti per le altre destinazioni -->
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="/assets/costa brava.jpg" alt="Destinazione 2" style= "height: 120px;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Costa Brava</h5>
+                <p class="card-text">
+                  La Costa Brava, splendida costa della Catalogna, affascina con le sue spiagge nascoste, le baie rocciose, i villaggi pittoreschi e la ricca tradizione culinaria mediterranea.</p>
+                <a href="#" class="btn btn-primary align-self-center ">Scopri di più</a>
+              </div>
+            </div>
+          </div>
+          <!-- Ripeti per le altre destinazioni -->
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="/assets/corfu.jpg" alt="Destinazione 2" style= "height: 120px;" >
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Corfù</h5>
+                <p class="card-text">Corfù, incantevole isola greca nel Mar Ionio, offre paesaggi mozzafiato, spiagge di sabbia dorata, acqua cristallina, storia antica e ospitalità calorosa. Un paradiso mediterraneo da esplorare.</p>
+                <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+              </div>
+            </div>
+          </div><div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="/assets/atene.avif" alt="Destinazione 2" style= "height: 120px;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Atene</h5>
+                <p class="card-text">Atene, capitale della Grecia, culla della civiltà occidentale, è ricca di storia antica, siti archeologici come l'Acropoli, musei, gastronomia vibrante e atmosfera vivace. Una destinazione culturale imperdibile.</p>
+                <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+              </div>
+            </div>
+          </div><div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="/assets/maldive-139.jpg" alt="Destinazione 2" style= "height: 120px;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Maldive</h5>
+                <p class="card-text">Le Maldive, arcipelago tropicale nell'Oceano Indiano, sono rinomate per le loro acque turchesi, le spiagge di sabbia bianca, i resort di lusso, la ricca vita marina e l'atmosfera paradisiaca.</p>
+                <a href="#" class="btn btn-primary align-self-center ">Scopri di più</a>
+              </div>
+            </div>
+          </div><div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="/assets/tunisi.jpg" alt="Destinazione 2" style= "height: 120px;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tunisi</h5>
+                <p class="card-text">
+                  Tunisi, capitale della Tunisia, mescola storia millenaria con vibrazioni moderne. Dai souk tradizionali ai siti archeologici, offre cultura, gastronomia e spiagge mediterranee mozzafiato.</p>
+                <a href="#" class="btn btn-primary align-self-center">Scopri di più</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Offerta del giorno che non deve vedersi su dispositivi piccini-->
+    <div class="container d-none d-sm-block" id="Offerta">
+      <h2 class="text-center my-4">Offerta del Giorno</h2>
+      <div class="row">
+        <div class="col-9">
+          <img src="/assets/cervia2.jpg" alt="Cervia">
+        </div>
+        <div class="col-3">
+          <h3>Cervia</h3>
+            <p>Dal <span class="fw-bold">10/08/2024</span> al <span class="fw-bold">18/08/2024</span></p>
+            <p>Luogo: Cervia</p>
+            <p>Cervia, incastonata sulla costa adriatica dell'Italia, è rinomata per le sue spiagge dorate e il mare cristallino. La città, con le sue saline millenarie, offre un'atmosfera pittoresca con le sue case colorate, i vicoli medievali e una vivace vita notturna. Una destinazione perfetta per vacanze rilassanti e culturali.</p>
+            <a href="#" class="btn btn-primary">Prenota subito!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!--Last Minute-->
+    <div class="container" id="LastMinute">
+      <h2 class="text-center my-4">Last Minute</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow">
+              <video class="embed-responsive-item" autoplay loop muted>
+                <source src="/assets/1104713_1080p_Energy_Enjoy_1280x720.mp4" type="video/mp4" style="height: 260px;">
+              </video>
+              <div class="card-body">
+                <p class="card-text">Preparati a vivere un'esperienza da sogno!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="/assets/soluzione-gruppi.jpg" class="card-img-top" alt="Immagine 2">
+              <div class="card-body">
+                <p class="card-text">Scopri le offerte dedicate ai gruppi <a href="#">qui</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="/assets/isola-delba-spiaggia-sant-andrea-hd.jpg" class="card-img-top" alt="Immagine 3">
+              <div class="card-body">
+                <p class="card-text">Pronto per l'Isola d'elba? Clicca <a href="#">qui</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!--Testimonial-->
+      <div class="container" id="diNoi">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <h2 class="text-center mb-4">Dicono di noi</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <p class="card-text">Cercavo da molto un sito fatto in questo modo!</p>
+                      <p class="card-text">Loredana, Torino, 25 anni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <p class="card-text">Esperienza meravigliosa, ho conosciuto tante persone e fatto il viaggio più bello della mia vita!</p>
+                      <p class="card-text">Cristina, 25 anni, Torino</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <p class="card-text">Userò sicuramente questo sito per prenotare nuovamemte un viaggio!</p>
+                      <p class="card-text">Sara, 27 anni, Canada</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <footer>
+        <h5>Martina's agency</h5>
+        <h5>Indirizzo: Via Sestriere 168, Vinovo</h5>
+        <h5>Telefono: 0123-456789</h5>
+        <h5>Email: info@agenzia.com</h5>
+        <button type="button" class="btn btn-primary">Contattaci</button>
+
+      </footer>
+      <!-- <footer class="bg-dark py-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="text-light">Informazioni Agenzia</h5>
+              <p class="text-light">Indirizzo: Via Sestriere 168 - Vinovo</p>
+              <p class="text-light">Telefono: 0123-456789</p>
+              <p class="text-light">Email: info@agenzia.com</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <button type="button" class="btn btn-primary">Contattaci</button>
+            </div>
+          </div>
+        </div>
+      </footer>       -->
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
